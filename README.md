@@ -1,3 +1,4 @@
+
 # Host Your CV on AWS
 
 ## Overview
@@ -47,6 +48,7 @@ delete failed: s3://cv-23l-3085/site/index.html An error occurred (AccessDenied)
 [ec2-user@ip-172-31-35-158 ~]$ echo test > /tmp/x && aws s3 cp /tmp/x s3://cv-23l-3085/site/index.html
 upload failed: ../../tmp/x to s3://cv-23l-3085/site/index.html An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:sts::327260351546:assumed-role/cv-ec2-role-23l-3085/i-0675d5b64ff31f1d1 is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::cv-23l-3085/site/index.html" because no identity-based policy allows the s3:PutObject action
 
+![1792765693440](image/README/1792765693440.png)
 
 ## EC2 sync log
 
@@ -65,6 +67,7 @@ upload failed: ../../tmp/x to s3://cv-23l-3085/site/index.html An error occurred
 
 
 
+![1792765702927](image/README/1792765702927.png)
 
 ## Endpoint verification
 
@@ -105,17 +108,13 @@ Example shape of an application log event (illustrative; use the actual CloudWat
   "fn": "cv-func-23l-3085",
   "path": "/",
   "status": 200,
-  "ms": 42.17
+  "ms": 318.38
 }
 ```
 
+![1792765731099](image/README/1792765731099.png)
 
-
-![1792765340996](image/README/1792765340996.png)
-
-
-
-![1792765356163](image/README/1792765356163.png)
+![1792765740982](image/README/1792765740982.png)
 
 ## Verification checklist
 
