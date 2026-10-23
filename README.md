@@ -47,6 +47,7 @@ delete failed: s3://cv-23l-3085/site/index.html An error occurred (AccessDenied)
 [ec2-user@ip-172-31-35-158 ~]$ echo test > /tmp/x && aws s3 cp /tmp/x s3://cv-23l-3085/site/index.html
 upload failed: ../../tmp/x to s3://cv-23l-3085/site/index.html An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:sts::327260351546:assumed-role/cv-ec2-role-23l-3085/i-0675d5b64ff31f1d1 is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::cv-23l-3085/site/index.html" because no identity-based policy allows the s3:PutObject action
 
+![1792765474368](image/README/1792765474368.png)
 
 ## EC2 sync log
 
@@ -65,6 +66,7 @@ upload failed: ../../tmp/x to s3://cv-23l-3085/site/index.html An error occurred
 
 
 
+![1792765483316](image/README/1792765483316.png)
 
 ## Endpoint verification
 
