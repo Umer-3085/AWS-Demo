@@ -4,7 +4,7 @@
     {
       "Effect": "Allow",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::cv-22l-6543/site/*"
+      "Resource": "arn:aws:s3:::cv-23l-3085/site/*"
     }
   ]
 }
